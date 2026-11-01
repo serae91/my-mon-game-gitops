@@ -26,9 +26,9 @@ spec:
             - name: PORT
               value: "3000"
             - name: FRONTEND_URL
-              value: http://mymon-game.test
+              value: https://mymon-game.test
             - name: KEYCLOAK_ISSUER
-              value: http://mymon-game.test/auth/realms/mymon-game
+              value: https://mymon-game.test/auth/realms/mymon-game
             - name: KEYCLOAK_JWKS_URL
               value: http://keycloak.my-mon-game.svc.cluster.local:8080/auth/realms/mymon-game/protocol/openid-connect/certs
             - name: DATABASE_URL
