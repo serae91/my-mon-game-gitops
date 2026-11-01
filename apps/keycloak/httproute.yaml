@@ -9,7 +9,7 @@ spec:
       namespace: default
       sectionName: http
   hostnames:
-    - mymon-game.local
+    - mymon-game.test
   rules:
     - matches:
         - path:

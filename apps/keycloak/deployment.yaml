@@ -41,7 +41,7 @@ spec:
             - name: KC_HTTP_RELATIVE_PATH
               value: /auth
             - name: KC_HOSTNAME
-              value: http://mymon-game.local/auth
+              value: http://mymon-game.test/auth
             - name: KC_PROXY_HEADERS
               value: xforwarded
             - name: KC_BOOTSTRAP_ADMIN_USERNAME
