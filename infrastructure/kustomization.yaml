@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - envoy-gateway/
   - cert-manager/
+  - mymon-game-tls-secret.yaml

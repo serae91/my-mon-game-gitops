@@ -8,6 +8,9 @@ spec:
     - name: my-mon-game
       namespace: default
       sectionName: http
+    - name: my-mon-game
+      namespace: default
+      sectionName: https
   hostnames:
     - mymon-game.test
   rules:
