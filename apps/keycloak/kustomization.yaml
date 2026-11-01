@@ -6,3 +6,8 @@ resources:
   - service.yaml
   - keycloak-admin-secret.yaml
   - httproute.yaml
+
+configMapGenerator:
+  - name: keycloak-realm
+    files:
+      - realm.json=realm/realm.json

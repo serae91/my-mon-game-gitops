@@ -18,6 +18,7 @@ spec:
           image: quay.io/keycloak/keycloak:26.8.1
           args:
             - start
+            - --import-realm
           ports:
             - name: http
               containerPort: 8080
@@ -78,3 +79,12 @@ spec:
               port: 9000
             periodSeconds: 10
             timeoutSeconds: 5
+
+          volumeMounts:
+            - name: realm-import
+              mountPath: /opt/keycloak/data/import
+              readOnly: true
+      volumes:
+        - name: realm-import
+          configMap:
+            name: keycloak-realm
