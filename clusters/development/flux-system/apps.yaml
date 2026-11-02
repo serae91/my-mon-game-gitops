@@ -12,6 +12,7 @@ spec:
     name: flux-system
   dependsOn:
     - name: infrastructure
+    - name: gateway-config
   decryption:
     provider: sops
     secretRef:
